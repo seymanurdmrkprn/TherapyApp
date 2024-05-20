@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Register Title TextView -->
+    <TextView
+        android:id="@+id/registerTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-140dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true" />
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/black"
+        android:foregroundTint="#FFFFFF"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:shadowColor="#FFFFFF"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Surname EditText -->
+    <EditText
+        android:id="@+id/surnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEditText"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/surname"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surnameEditText"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="8dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/problem"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:text="@string/register"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <!-- Already Have an Account TextView -->
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account_sign_in"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/registerButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign in."
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/registerButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:backgroundTint="@color/colorPrimary"/>
+
+</RelativeLayout>
